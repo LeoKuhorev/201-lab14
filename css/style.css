@@ -1,1 +1,50 @@
 /* TODO: Make it awesome */
+body {
+  width: 960px;
+  margin: 10px auto;
+}
+
+/* HEADER */
+body > header {
+  height: 50px;
+  line-height: 50px;
+  background: rgb(190, 190, 190);
+}
+body > header h1 {
+  float: left;
+  overflow: auto;
+}
+ul li {
+  float: right;
+  padding: 0 40px;
+  overflow: auto;
+}
+
+/* MAIN */
+main {
+  height: 100%;
+  clear: both;
+  background: rgb(255, 13, 13);
+}
+.col-1 h1 {
+  text-align: center;
+  padding: 30px;
+}
+.copy ol {
+  text-align: center;
+  padding: 30px;
+}
+.col-2 {
+  border: 1px solid black;
+  text-align: center;
+  height: 800px;
+}
+
+/* FOOTER */
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 960px;
+  height: 50px;
+  background: rgb(51, 36, 189);
+}
