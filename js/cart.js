@@ -46,14 +46,14 @@ function showCart() {
     // TODO: Create a TR
     var trEl = renderEl('tr', tbodyEl);
     // TODO: Create a TD for the delete link, quantity,  and the item
-    renderEl('td', trEl, 'remove');
+    renderEl('td', trEl, 'X');
     renderEl('td', trEl, cart.items[i].quantity);
     renderEl('td', trEl, cart.items[i].product);
   }
 }
 
 function removeItemFromCart(event) {
-  if(event.target.textContent === 'remove') {
+  if(event.target.textContent === 'X') {
     var clickedItemRow = event.target.parentElement.rowIndex;
     var index = clickedItemRow - 1;
     cart.removeItem(index);

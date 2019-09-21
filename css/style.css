@@ -8,7 +8,7 @@ body {
 body > header {
   height: 50px;
   line-height: 50px;
-  background: rgb(190, 190, 190);
+  background: rgb(162, 221, 255);
 }
 body > header h1 {
   float: left;
@@ -24,7 +24,8 @@ ul li {
 main {
   height: 100%;
   clear: both;
-  background: rgb(255, 13, 13);
+  background: rgb(5, 5, 5);
+  color: salmon;
 }
 .col-1 h1 {
   text-align: center;
@@ -46,5 +47,5 @@ footer{
   bottom: 0;
   width: 960px;
   height: 50px;
-  background: rgb(51, 36, 189);
+  background: rgb(162, 221, 255);
 }
