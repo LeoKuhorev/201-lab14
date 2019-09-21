@@ -6,21 +6,26 @@ var Cart = function(items) {
   this.items = items;
 };
 
+// eslint-disable-next-line no-unused-vars
 Cart.prototype.addItem = function(product, quantity) {
   // TODO: Fill in this instance method to create a new CartItem and add it to this.items
 };
 
 Cart.prototype.saveToLocalStorage = function() {
   // TODO: Fill in this instance method to save the contents of the cart to localStorage
-  var cartStringifyied = JSON.stringify(this);
+  var cartStringifyied = JSON.stringify(this.items);
   localStorage.setItem('cart', cartStringifyied);
 };
 
-Cart.prototype.removeItem = function(item) {
+Cart.prototype.removeItem = function(index) {
   // TODO: Fill in this instance method to remove one item from the cart.
+  console.table(this.items);
+  this.items.splice(index, 1);
+  console.table(this.items);
   // Note: You will have to decide what kind of parameter to pass in here!
 };
 
+// eslint-disable-next-line no-unused-vars
 var CartItem = function(product, quantity) {
   this.product = product;
   this.quantity = quantity;

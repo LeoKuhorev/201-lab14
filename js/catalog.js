@@ -19,7 +19,7 @@ function populateForm() {
   }
 }
 
-// When someone submits the form, we need to add the selected item to the cart 
+// When someone submits the form, we need to add the selected item to the cart
 // object, save the whole thing back to local storage and update the screen
 // so that it shows the # of items in the cart and a quick preview of the cart itself.
 function handleSubmit(event) {
@@ -40,6 +40,7 @@ function addSelectedItemToCart() {
   // TODO: get the quantity
   var quantity = document.getElementById('quantity').value;
   // TODO: using those, add one item to the Cart
+  // eslint-disable-next-line no-undef
   var item =  new CartItem(product, quantity);
   cart.items.push(item);
   return item;
@@ -47,7 +48,7 @@ function addSelectedItemToCart() {
 
 // TODO: Update the cart count in the header nav with the number of items in the Cart
 function updateCounter() {
- document.getElementById('itemCount').textContent = cart.items.length;
+  document.getElementById('itemCount').textContent = cart.items.length;
 }
 
 // TODO: As you add items into the cart, show them (item & quantity) in the cart preview div
